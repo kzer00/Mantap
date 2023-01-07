@@ -85,3 +85,4 @@ echo "$NS_DOMAIN" >> /root/nsdomain
 echo "$SUB_DOMAIN" >> /etc/xray/domain
 cd
 
+
