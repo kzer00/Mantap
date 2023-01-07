@@ -21,8 +21,8 @@ echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=myserveronline.tech
-SUB_DOMAIN=-${sub}myserveronline.tech
-NS_DOMAIN=zerosl-${sub}myserveronline.tech
+SUB_DOMAIN=${sub}-myserveronline.tech
+NS_DOMAIN=zerosl-${sub}-myserveronline.tech
 CF_ID=anggarisma49@gmail.com
 CF_KEY=6MIWKDw5CAJm-Uxml2Amq8jNV8M66D-JTSvNUSz4
 set -euo pipefail
