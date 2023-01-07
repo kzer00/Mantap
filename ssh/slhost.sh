@@ -21,10 +21,10 @@ echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=myserveronline.tech
-SUB_DOMAIN=${sub}-myserveronline.tech
-NS_DOMAIN=kzero-${sub}-myserveronline.tech
+SUB_DOMAIN=${sub}.myserveronline.tech
+NS_DOMAIN=kzero-${sub}.myserveronline.tech
 CF_ID=anggarisma49@gmail.com
-CF_KEY=6MIWKDw5CAJm-Uxml2Amq8jNV8M66D-JTSvNUSz4
+CF_KEY=896479123cbb19c2a964c3484d10ba2cf943e
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
@@ -84,5 +84,4 @@ echo "Host SlowDNS : $NS_DOMAIN"
 echo "$NS_DOMAIN" >> /root/nsdomain
 echo "$SUB_DOMAIN" >> /etc/xray/domain
 cd
-
 
