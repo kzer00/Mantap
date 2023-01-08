@@ -13,7 +13,7 @@ wget https://github.com/Mygod/dnstt/archive/refs/heads/plugin.zip
 unzip plugin.zip
 unzip dnstt-plugin.zip
 cd
-#cd dnstt/dnstt-server
-#go build
-#./dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
+cd dnstt/dnstt-server
+go build
+./dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
 cd
